@@ -1,0 +1,11 @@
+name: "test_pipeline"
+version: "0.0.0"
+profile: "test_pipeline"
+
+model-paths: ["pipeline/models"]
+seed-paths: ["pipeline/seeds"]
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  test_pipeline:
+    +materialized: view

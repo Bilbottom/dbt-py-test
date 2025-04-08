@@ -1,0 +1,21 @@
+---
+version: 2
+
+models:
+  - name: stg__events
+    columns:
+      - name: event_id
+        data_tests:
+          - unique
+          - not_null
+      - name: user_id
+        data_tests:
+          - relationships:
+              to: ref("users")
+              field: user_id
+  - name: stg__users
+    columns:
+      - name: user_id
+        data_tests:
+          - unique
+          - not_null

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dbt-py-test"
+version = "0.0.0"
+description = "Manual test project for the dbt-py-wrap package."
+authors = [{name = "Bilbottom"}]
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+
+[tool.setuptools]
+packages = ["custom_package"]
+dynamic.dependencies = {file = ["requirements.txt"]}
