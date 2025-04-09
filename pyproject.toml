@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "dbt-py-test"
 version = "0.0.0"
-description = "Manual test project for the dbt-py-wrap package."
+description = "Manual test project for the dbt-py package."
 authors = [{name = "Bilbottom"}]
 requires-python = ">=3.11"
 dynamic = ["dependencies"]
