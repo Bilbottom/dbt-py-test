@@ -2,4 +2,4 @@ dbt-core>=1.5.0,<1.10.0
 dbt-duckdb
 
 # adjust the version here for testing
-dbt-py-wrap @ git+https://github.com/Bilbottom/dbt-py@v0.0.3
+dbt-py-wrap @ git+https://github.com/billwallis/dbt-py@v0.0.3

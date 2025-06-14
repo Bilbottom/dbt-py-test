@@ -1,10 +1,10 @@
 # dbt-py-test
 
-Manual test project for the [dbt-py](https://github.com/Bilbottom/dbt-py) package.
+Manual test project for the [dbt-py](https://github.com/billwallis/dbt-py) package.
 
 ## How it works
 
-This repo uses the [dbt-py](https://github.com/Bilbottom/dbt-py) package to inject custom Python into the dbt `modules` Jinja context.
+This repo uses the [dbt-py](https://github.com/billwallis/dbt-py) package to inject custom Python into the dbt `modules` Jinja context.
 
 As a minimal example, this repo just uses `requirements.txt` files and [setuptools](https://setuptools.pypa.io/en/latest/).
 
