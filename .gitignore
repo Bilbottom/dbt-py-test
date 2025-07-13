@@ -2,6 +2,7 @@
 logs/
 target/
 dbt_packages/
+.user.yml
 
 # IDE and system files
 .vscode/

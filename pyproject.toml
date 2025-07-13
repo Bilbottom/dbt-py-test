@@ -12,5 +12,21 @@ dynamic = ["dependencies"]
 
 
 [tool.setuptools]
-packages = ["custom_package"]
 dynamic.dependencies = {file = ["requirements.txt"]}
+py-modules = [
+    "custom_module",
+]
+packages = [
+    "custom_package",
+    "another_custom_package",
+]
+
+
+[tool.dbt-py]
+packages = [
+    {name = "math"},  # stdlib package
+    {name = "dbt_py"},  # installed package
+    {name = "custom_module"},  # custom module
+    {name = "custom_package"},  # custom package
+    {name = "another_package", path = "another_custom_package"},  # custom package with path
+]
